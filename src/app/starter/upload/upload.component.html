@@ -1,0 +1,94 @@
+<div class="wrapper">
+   <!-- Main Header -->
+  <app-starter-header></app-starter-header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <app-starter-left-side></app-starter-left-side>
+  <!-- Content Wrapper. Contains page content -->
+  
+  <div class="content-wrapper">
+  
+  	<!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        PIBK PJT Dashboard
+        <small>Version 1.0</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li class="active">Dashboard</li>
+      </ol>
+    </section>
+
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-8">
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title"> Upload Barang Baru</h3>
+            </div>
+
+            <form role="form" (ngSubmit)="addMasterBarang()" >
+              <div class="box-body">
+
+                <div class="form-group">
+                  <label for="JenisAJU">Jenis AJU</label>
+                  <input type="text" class="form-control" id="JenisAJU" placeholder="JenisAJU">
+                </div>
+                
+                <div class="form-group">
+                  <label for="kodeJenisPIBK">kode Jenis PIBK</label>
+                  <input type="text" class="form-control" id="kodeJenisPIBK" placeholder="kodeJenisPIBK">
+                </div>
+
+                <div class="form-group">
+                  <label for="nomorBarang">nomor Barang</label>
+                  <input type="text" class="form-control" id="nomorBarang" placeholder="nomorBarang">
+                </div>
+
+                <div class="form-group">
+                  <label for="kodeKantor">kode Kantor</label>
+                  <input type="text" class="form-control" id="kodeKantor" placeholder="kodeKantor">
+                </div>
+
+                <div class="form-group">
+                  <label for="kodeJenisAngkut">kode Jenis Angkut</label>
+                  <input type="text" class="form-control" id="kodeJenisAngkut" placeholder="kode Jenis Angkut">
+                </div>
+
+                <div class="form-group">
+                  <label for="namaPengangkut">nama Pengangkut</label>
+                  <input type="text" class="form-control" id="namaPengangkut" placeholder="namaPengangkut">
+                </div>
+
+                <div class="form-group">
+                  <label for="nomorFlight">nomor Flight</label>
+                  <input type="text" class="form-control" id="nomorFlight" placeholder="nomorFlight">
+                </div>
+
+              </div>
+              <!-- /.box-body -->
+
+              <div class="box-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+  <!-- /.content-wrapper -->
+  <!-- Main Footer -->
+  <app-starter-footer></app-starter-footer>
+  <!-- Control Sidebar -->
+  <app-starter-control-sidebar></app-starter-control-sidebar>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>

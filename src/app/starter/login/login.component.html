@@ -1,0 +1,56 @@
+<body >
+  <div class="login-box">
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">Silahkan Masuk</p>
+
+      <form *ngIf="!userService.isUserAuthenticated()" novalidate >
+
+        <div class="form-group has-feedback" >
+          
+          <input type="email" class="form-control" placeholder="Email" name="email" 
+             pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required [(ngModel)]="email" >
+
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+
+        <div class="form-group has-feedback">
+
+          <input type="password" class="form-control" placeholder="Password" name="password" 
+             required [(ngModel)]="password" >
+
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-8">
+            <div class="checkbox icheck">
+              <label>
+                <input type="checkbox"> Ingatkan Saya
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-xs-4">
+            <button (click)="loginUser()" class="btn btn-primary btn-block btn-flat">
+              Login
+            </button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <!-- /.social-auth-links -->
+
+      <!-- <a href="#">I forgot my password</a><br>
+      <a href="register.html" class="text-center">Register a new membership</a> -->
+      <a href="register"><i class="fa fa-link"></i> <span>Belum punya aku, Daftar!</span></a>
+
+      <!-- <a href="" type="button" (click)="openRegisterModal()">
+        registerButton
+      </a -->
+
+    </div>
+    <!-- /.login-box-body -->
+  </div>
+</body>

@@ -1,0 +1,68 @@
+import { PackageDetails } from './packagedetails.model';
+
+export interface Package {
+
+  id?: number;
+  jenisAJU?: string;
+  kodeJenisPIBK?: number;
+  nomorBarang?: string;
+  kodeKantor?: string;
+  kodeJenisAngkut?: number;
+  namaPengangkut?: string;
+  nomorFlight?: string;
+  kodePelabuhanMuat?: string;
+  kodePelabuhanBongkar?: string;
+  kodeGudangAsal?: string;
+  nomorInvoice?: string;
+  tanggalInvoice?: string;
+  kodeNegaraAsal?: string;
+  jumlahBarang?: string;
+  nomorDokumenBC11?: string;
+  tanggalDokumenBC11?: string;
+  nomorPosBC11?: string;
+  nomorSubPosBC11?: string;
+  nomorSubSubPosBC11?: string;
+  nomorMasterBLAWB?: string;
+  tanggalMasterBLAWB?: string;
+  nomorHouseBLAWB?: string;
+  tanggalHouseBLAWB?: string;
+  kodeNegaraPengirim?: string;
+  namaPengirim?: string;
+  alamatPengirim?: string;
+  jenisIDPenerima?: string;
+  nomorIDPenerima?: string;
+  namaPenerima?: string;
+  alamatPenerima?: string;
+  teleponPenerima?: string;
+  jenisIDPemberitahu?: string;
+  nomorIDPemberitahu?: string;
+  namaPemberitahu?: string;
+  alamatPemberitahu?: string;
+  nomorIzinPemberitahu?: string;
+  tanggalIzinPemberitahu?: string;
+  kodeValutaAsing?: string;
+  nilaiTotalFOB?: string;
+  nilaiAsuransi?: string;
+  nilaiFreight?: string;
+  nilaiTotalCIF?: string;
+  jumlahBeratNetto?: string;
+  jumlahBeratBrutto?: string;
+  totalDibayar?: string;
+  kodeGudangTujuan?: string;
+  npwpBilling?: string;
+  namaBilling?: string;
+  kodePungutan?: string;
+  nilai?: string;
+  tanggalTiba?: string;
+  jamTiba?: string;
+  partShipment?: string;
+  kodePelabuhanTransit?: string;
+  kodePelabuhanAkhir?: string;
+  volume?: string;
+  jenisKemasan?: string;
+  totalPartial?: string;
+  marking?: string;
+
+  packageDetails: PackageDetails[];
+  ndpbm?: string;
+}
